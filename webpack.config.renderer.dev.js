@@ -94,21 +94,26 @@ export default merge.smart(baseConfig, {
         use: 'file-loader',
       },
       // SVG Font
-      {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimetype: 'image/svg+xml',
-          }
-        }
-      },
-      // Common Image Formats
-      {
-        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/,
-        use: 'url-loader',
-      }
+      { test: /\.png$/, loader: 'url-loader?prefix=images/&limit=8000&mimetype=image/png' },
+      { test: /\.jpg$/, loader: 'url-loader?prefix=images/&limit=8000&mimetype=image/jpeg' },
+      { test: /\.svg/, loader: 'file-loader' }
+
+      // // SVG Font
+      // {
+      //   test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+      //   use: {
+      //     loader: 'url-loader',
+      //     options: {
+      //       limit: 10000,
+      //       mimetype: 'image/svg+xml',
+      //     }
+      //   }
+      // },
+      // // Common Image Formats
+      // {
+      //   test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/,
+      //   use: 'url-loader',
+      // }
     ]
   },
 
