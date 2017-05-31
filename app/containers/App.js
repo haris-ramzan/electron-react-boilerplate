@@ -9,8 +9,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.props.children}
+      <div className="system-layout">
+        <div className="system-body">
+          {this.props.children}
+        </div>
       </div>
     );
   }

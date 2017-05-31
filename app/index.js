@@ -3,10 +3,11 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
 import { createHashHistory } from 'history';
-// import { configureStore, history } from './store/configureStore';
-import './app.global.css';
+
 import 'bluerain-bootstrap-theme/dist/css/bluerain-bootstrap-theme.css';
 import 'bluerain-client-services/dist/style.css';
+
+// import 'bluerain-client-services/style.css';
 
 const history = createHashHistory();
 import store from './redux/store';
