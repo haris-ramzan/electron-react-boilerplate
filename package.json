@@ -2,7 +2,7 @@
   "name": "electron-react-boilerplate",
   "productName": "ElectronReact",
   "version": "0.12.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "description": "Bluerain-Client-Electron",
   "scripts": {
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js",
     "test-all": "npm run lint && npm run flow && npm run test && npm run build && npm run test-e2e",
@@ -198,6 +198,10 @@
     "lodash": "4.17.4",
     "lodash.kebabcase": "4.1.1",
     "loopback-graphql-relay": "^0.7.2",
+    "apollo-client": "1.0.4",
+    "react-tooltip": "3.2.10",
+    "reactstrap": "3.9.5",
+    "subscriptions-transport-ws": "^0.5.5",
 
     "electron-debug": "^1.1.0",
     "font-awesome": "^4.7.0",
