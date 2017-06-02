@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
-import { createHashHistory } from 'history';
+import createHistory from 'history/createBrowserHistory'
 
 import 'bluerain-bootstrap-theme/dist/css/bluerain-bootstrap-theme.css';
 import 'bluerain-client-services/dist/style.css';
 
 // import 'bluerain-client-services/style.css';
 
-const history = createHashHistory();
+const history = createHistory();
 import store from './redux/store';
 
 render(

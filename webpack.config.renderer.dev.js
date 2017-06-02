@@ -55,6 +55,8 @@ export default merge.smart(baseConfig, {
         test: /\.(css|scss)$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
+      { test: /\.(graphql|gql)$/, loader: 'graphql-tag/loader' },
+
       // WOFF Font
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,

@@ -3,6 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router';
 import App from './containers/App';
 import IndexPage from './pages/IndexPage';
+// import LoginPage from './pages/LoginPage';
 
 export default () => (
   <App>
