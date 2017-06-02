@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, withApollo } from 'react-apollo';
 import gql from 'graphql-tag';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class Page extends React.Component {
 
