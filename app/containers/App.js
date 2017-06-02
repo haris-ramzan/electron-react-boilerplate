@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import type { Children } from 'react';
 import '../layouts/system.css';
 import SystemNav from '../components/SystemNav';
+import 'bluerain-bootstrap-theme/dist/css/layouts/system-layout.css';
 
 
 export default class App extends Component {
