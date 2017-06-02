@@ -16,8 +16,8 @@ import NotFound from './pages/404';
 export default () => (
   <App>
     <Switch>
-      {/* <Route path="/" component={IndexPage} /> */}
-      <Route path="/" component={LoginPage} />
+      <Route path="/" component={IndexPage} />
+      <Route path="/login" component={LoginPage} />
       <Route path="/app" component={IndexPage} />
       <Route path="/logout" component={LogoutPage} />
       <Route path="/terms" component={TermsAndConditionsPage} />

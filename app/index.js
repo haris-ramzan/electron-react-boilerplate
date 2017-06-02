@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
-import createHistory from 'history/createBrowserHistory'
+import createBrowserHistory from 'history/createBrowserHistory';
 import { ApolloProvider } from 'react-apollo';
 import 'bluerain-bootstrap-theme/dist/css/bluerain-bootstrap-theme.css';
 import 'bluerain-client-services/dist/style.css';
@@ -10,7 +10,7 @@ import { client, wsClient } from './client';
 
 // import 'bluerain-client-services/style.css';
 
-const history = createHistory();
+const history = createBrowserHistory();
 import store from './redux/store';
 
 render(
