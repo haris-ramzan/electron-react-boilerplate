@@ -1,5 +1,6 @@
 // import { withNotifications } from 'bluerain-client-services';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 // import { showLoading, hideLoading } from 'react-redux-loading-bar';
 import store from '../../redux/store';
 import { withNotifications } from '../Notifications/withNotifications';
