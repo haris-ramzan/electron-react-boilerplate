@@ -1,8 +1,8 @@
 /**
  * Created by saad bin saeed on 3/2/17.
  */
-import React, { PropTypes } from 'react';
-// import SearchBarComponent from 'bluerain-ui/lib/searchBar/SearchBar.component';
+import React from 'react';
+import PropTypes from 'prop-types';
 import IconComponent from 'bluerain-ui/lib/Icon/Icon.component';
 import { Link } from 'react-router';
 import includes from 'lodash/includes';

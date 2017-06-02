@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Sidebar from 'react-sidebar';
 
 import SystemNavComponent from './SystemNav.component';
 import apps from '../../server/appLoader';
 
 const propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.object,
-    React.PropTypes.func
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.func
   ]),
-  systemNav: React.PropTypes.shape({
-    actions: React.PropTypes.object,
-    state: React.PropTypes.object
+  systemNav: PropTypes.shape({
+    actions: PropTypes.object,
+    state: PropTypes.object
   }).isRequired
 };
 

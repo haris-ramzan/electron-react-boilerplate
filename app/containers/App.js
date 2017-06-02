@@ -1,6 +1,9 @@
 // @flow
 import React, { Component } from 'react';
 import type { Children } from 'react';
+import '../layouts/system.css';
+import SystemNav from '../components/SystemNav';
+
 
 export default class App extends Component {
   props: {
@@ -10,9 +13,11 @@ export default class App extends Component {
   render() {
     return (
       <div className="system-layout">
-        <div className="system-body">
-          {this.props.children}
-        </div>
+        <SystemNav>
+          <div className="system-body">
+            {this.props.children}
+          </div>
+        </SystemNav>
       </div>
     );
   }
