@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import  { Link } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import  { Link } from 'react-router';
+import { browserHistory } from 'react-router';
 import 'bluerain-bootstrap-theme/dist/css/components/login.css';
 import 'bluerain-bootstrap-theme/dist/css/layouts/flexbox-layout.css';
 import 'bluerain-bootstrap-theme/dist/css/layouts/absolute-center-layout.css';

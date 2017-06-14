@@ -1,5 +1,5 @@
 import { graphql } from 'react-apollo';
-import {withRouter} from "react-router-dom";
+import {withRouter} from "react-router";
 
 import LoginMutation from './mutation.graphql';
 import ViewerQuery from './query.graphql';
